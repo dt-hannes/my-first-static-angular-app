@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template: `<div>Hello, {{value}}</div><div>{{apiMessage}}</div>`,
+  template: `<div class='app-message'>Hello, {{value}}</div><div class='api-message'>{{apiMessage}}</div>`,
 })
 export class AppComponent implements OnInit {
   value = 'Azure Static Web Apps';
