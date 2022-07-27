@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   value = 'Azure Static Web Apps';
-  apiMessage = "";
+  apiMessage: string = "";
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+    
+  }
 
   ngOnInit() {
     this.http.get("/api/StaticAppHttpTriggerTest").subscribe(
